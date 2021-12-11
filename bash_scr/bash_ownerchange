@@ -1,0 +1,23 @@
+changeowner(){
+	echo Опция:	
+	read op
+
+	echo Потребител:
+	read username
+
+	case $op in
+	
+	1)
+		echo Файл:
+		read file
+		sudo chown $username:$user $file ;;	
+	
+	2)
+		echo Папка:
+		read dir
+		sudo chown -R $username:$username $dir ;;
+
+	*)
+
+esac
+}

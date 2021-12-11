@@ -1,0 +1,62 @@
+#ACTUALIZATION
+#актуализация на системата и обновяване на репотата
+alias upd='sudo pacman -Syy'
+alias upg='sudo pacman -Syu'
+alias up='sudo pacman -Syyuu'
+alias repos_list='sudo nano /etc/pacman.conf'
+#-------------------------------------------------------------------------------------------------------------------------
+#GAMING
+#включване на CS
+alias cs='steam steam://rungameid/730'
+#включване на custom хак за CS
+alias cs_hack='cd Fuzion && ./load'
+#-------------------------------------------------------------------------------------------------------------------------
+#ADMINISTRATION
+#за биг инфо
+alias adin='./sysinop'
+#за преглед на историята
+alias h='history'
+#за преглед на грешки от последната сесия
+alias j='sudo journalctl -b -1'
+#за преглед на текущо ядро
+alias kv='uname -r'
+#за промяна на собственик на файлове
+alias chown='./changeowner.sh'
+#reload на xfce4 window manager
+alias wmr='xfwm4 --replace'
+#reload на дисплей мениджър
+alias rdspm='sudo systemctl restart lightdm.service' 
+alias bc='cd ..'
+#-------------------------------------------------------------------------------------------------------------------------
+#SHORTCUTS
+#App за музика 
+alias music='freetube &'
+#Discord
+alias drd='discord &'
+#-------------------------------------------------------------------------------------------------------------------------
+#WEB-SHORTCUTS
+alias insta='firefox https://www.instagram.com/ &'
+alias yt='firefox https://www.youtube.com/ &'
+#дистанционно обучение:
+alias clsrm='firefox https://classroom.google.com/u/0/h &'
+alias bel='firefox https://meet.google.com/vcu-kkvg-mzn?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias mat='firefox https://meet.google.com/fay-bkrc-jfj?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias filo='firefox https://meet.google.com/apo-vwoc-qzs?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias fiz='firefox https://meet.google.com/ioj-rrvn-vav?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias geo='firefox https://meet.google.com/gdo-nuek-bdm?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias bio='firefox https://meet.google.com/vhp-owsi-cse?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias isto='firefox https://meet.google.com/khu-grmt-nmg?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias rusk='firefox https://meet.google.com/kkg-weha-jmz?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias km='firefox https://meet.google.com/ueo-tzkm-nsf?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias progr='firefox https://meet.google.com/ots-xgvb-fga?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias vskr='firefox https://meet.google.com/vhp-owsi-cse?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+alias moodle='firefox https://moodle.elsys-bg.org/ &'
+alias angl='firefox https://meet.google.com/nvm-tbyz-fim?authuser=0 && ./codes/custom-meet-scr/start.sh &'
+#-------------------------------------------------------------------------------------------------------------------------
+#KVM
+#пускане на виртуалния мениджър
+alias kvm='virt-manager'
+#чек на ipто на виртуална мрежа
+alias nprp='ip a | grep virbr1'
+#virsh шел
+alias vrs='virsh'

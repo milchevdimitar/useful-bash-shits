@@ -1,0 +1,32 @@
+#търсене на файл
+findfile() {
+   file="$@"
+   file+="*"
+   find . -iname $file 2>&1 | grep -v "Operation not permitted"
+}
+#брой на файлове в зададена от потребителя папка
+numfiles() { 
+    N="$(ls $1 | wc -l)"; 
+    echo "$N files in $1";
+}
+#архивация
+targz(){
+    tar -zcvf $1.tar.gz $1; rm -r $1; 
+}
+#разахривация
+untargz(){
+    tar -zxvf $1; rm -r $1; 
+}
+#направи папка и влез в нея
+mkcd(){ 
+    mkdir -p $1; cd $1 
+}
+#календар за тази година
+calendar(){
+    myyear=`date +'%Y'`
+    cal "$myyear"
+}
+#за най-големите файлове в текущата директория
+flf() {
+    du -h -x -s -- * | sort -r -h | head -20;
+}

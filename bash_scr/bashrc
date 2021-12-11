@@ -1,0 +1,31 @@
+[[ $- != *i* ]] && return
+
+alias ls='ls --color=auto'
+#за цветовее
+PS1="\[\033[38;5;1m\]\u\[$(tput sgr0)\]@\[$(tput sgr0)\]\[\033[38;5;163m\]\h\[$(tput sgr0)\]\[\033[38;5;196m\]:\[$(tput sgr0)\]\[\033[38;5;6m\][\w]\[$(tput sgr0)\]:\[$(tput sgr0)\]\[\033[38;5;21m\] \[$(tput sgr0)\]"
+#PS1='[\u@\h \W]\$ '
+
+#За алиаси
+if [ -f ~/.bash_aliases ]; then
+        source ~/.bash_aliases
+fi 
+
+#За разархивация
+if [ -f ~/.bash_extract ]; then
+        source ~/.bash_extract
+fi
+
+#За времето
+if [ -f ~/.bash_weather ]; then
+        source ~/.bash_weather
+fi
+
+#За owner
+if [ -f ~/.bash_ownerchange ]; then
+        source ~/.bash_ownerchange
+fi
+
+#useful funcs
+if [ -f ~/.bash_useful ]; then
+        source ~/.bash_useful
+fi

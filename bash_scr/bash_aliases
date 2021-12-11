@@ -8,7 +8,7 @@ alias repos_list='sudo nano /etc/pacman.conf'
 #GAMING
 #включване на CS
 alias cs='steam steam://rungameid/730'
-#включване на custom хак за CS
+#включване на хак за CS
 alias cs_hack='cd Fuzion && ./load'
 #-------------------------------------------------------------------------------------------------------------------------
 #ADMINISTRATION
@@ -20,8 +20,6 @@ alias h='history'
 alias j='sudo journalctl -b -1'
 #за преглед на текущо ядро
 alias kv='uname -r'
-#за промяна на собственик на файлове
-alias chown='./changeowner.sh'
 #reload на xfce4 window manager
 alias wmr='xfwm4 --replace'
 #reload на дисплей мениджър

@@ -1,2 +1,2 @@
 # useful-bash-shits
-който знае как да ги позва ще ги ползва :)
+If u know how to use them - feel free to do so!
